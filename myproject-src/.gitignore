@@ -1,0 +1,58 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+**/node_modules
+# roadhog-api-doc ignore
+/src/utils/request-temp.js
+_roadhog-api-doc
+
+# production
+/dist
+/dist2
+node_modules.*
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+*bak
+
+
+# visual studio code
+.history
+*.log
+functions/*
+.temp/**
+
+# umi
+.umi
+.umi-production
+
+# screenshot
+screenshot
+.firebase
+.eslintcache
+
+lora-scripts
+build
+dist
+apk
+client
+py/download/*
+py/dist/*
+py/dist2/*
+py/Eva-AI
+py/LDPlayer4/*
+py/LDPlayer9/*
+py/client/*
+py/client-updater/*
+py/custom_nodes/*
+py/custom_nodes - 副本/*
+py/models/*
+temp-*
+__pycache__

@@ -1,0 +1,7 @@
+C:\Program Files\nodejs -> .\
++-- corepack@0.14.2
++-- create-umi@4.0.13
++-- cross-env@7.0.3
++-- npm@8.19.2
+`-- pnpm@9.4.0
+

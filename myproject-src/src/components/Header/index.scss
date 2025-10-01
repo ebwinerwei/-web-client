@@ -1,0 +1,163 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111414;
+  padding: 19px 20px;
+  a {
+    display: flex;
+    align-items: center;
+  }
+  .label {
+    width: 66px;
+    height: 24px;
+    background: linear-gradient(-30deg, #00a8ff, #005aff);
+    border-radius: 3px 3px 3px 0px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: -14px;
+    right: -46px;
+  }
+  .header-icon {
+    display: block;
+    width: 260px;
+    height: 51px;
+    cursor: pointer;
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    .Tabs {
+      display: flex;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 40px;
+      .tab {
+        margin-right: 68px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        white-space: nowrap;
+      }
+    }
+  }
+  .logged {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .continue_down {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .log-content {
+      display: flex;
+      align-items: center;
+    }
+    .avatar {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      border-radius: 12px;
+      position: relative;
+    }
+    .vip-icon {
+      display: block;
+      width: 17px;
+      height: 15px;
+      position: absolute;
+      bottom: 0;
+      left: 7px;
+    }
+    .name {
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      font-size: 18px;
+      color: #ffffff;
+      line-height: 24px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: #00a8ff;
+      }
+    }
+    .continue_down {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      width: 142px;
+      height: 112px;
+      background: rgba(29, 29, 29, 0.9);
+      border-radius: 10px;
+      border: 2px solid #383838;
+      z-index: 10;
+      padding: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      font-size: 14px;
+      transform: translateY(-100px);
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        color: #ffffff;
+        border-radius: 3px;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        img {
+          margin-right: 12px;
+        }
+        &:hover {
+          background: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+  }
+  .login {
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 40px;
+    background: #005aff;
+    border-radius: 3px;
+    padding: 9px 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .icon {
+      display: block;
+      width: 24px;
+      height: 25px;
+      margin-right: 9px;
+    }
+  }
+}
+
+@media screen and (max-width: 1760px) {
+  .header-wrapper {
+    .header-right {
+      .Tabs {
+        font-size: 20px;
+        .tab {
+          margin-right: 38px;
+        }
+      }
+    }
+  }
+}

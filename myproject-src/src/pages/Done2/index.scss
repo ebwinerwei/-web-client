@@ -1,0 +1,246 @@
+.done2 {
+  display: flex;
+  background: #171717;
+  .left {
+    flex: 1;
+    padding: 30px;
+    .top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .title {
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 40px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #00a8ff;
+        }
+      }
+      .btn {
+        position: relative;
+        width: 140px;
+        height: 46px;
+        background: #005aff;
+        border-radius: 5px;
+        line-height: 46px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+            rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+            rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+            rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+            rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        }
+      }
+      .btn1 {
+        color: #000;
+        background-color: #fff;
+      }
+      .continue_down {
+        position: absolute;
+        right: 0;
+        top: 55px;
+        width: 162px;
+        background: rgba(29, 29, 29, 0.9);
+        border-radius: 10px;
+        border: 2px solid #383838;
+        z-index: 10;
+        padding: 12px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        font-size: 14px;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 40px;
+          color: #ffffff;
+          border-radius: 3px;
+          transition: all 0.2s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 24px;
+      .picture {
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex: 1;
+        max-width: calc((100vw - 450px) / 2 - 50px);
+        min-height: 40vh;
+        background-color: #1d1d1d;
+        .pic {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            box-shadow: rgba(255, 255, 255, 0.17) 0px -13px 15px 0px inset,
+              rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset,
+              rgba(255, 255, 255, 0.09) 0px 8px 8px, rgba(255, 255, 255, 0.09) 0px 16px 16px;
+          }
+        }
+        .download {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 46px;
+          height: 46px;
+          background: linear-gradient(-30deg, #00a8ff, #005aff);
+          border-radius: 0px 10px 0px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          color: #fff;
+          transition: all 0.3s ease-in-out;
+          opacity: 0.7;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .checkButton {
+          z-index: 99;
+          position: absolute;
+          top: 24px;
+          left: 24px;
+          padding: 6px 12px;
+          border-radius: 4px;
+          color: #fff;
+          background-color: #005aff;
+          cursor: pointer;
+        }
+      }
+      .single_picture {
+        max-width: calc(100vw - 510px);
+        max-height: calc(100vh - 200px);
+      }
+    }
+  }
+  .right {
+    width: 450px;
+    background: #1d1d1d;
+    padding: 26px;
+    .top {
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 40px;
+      }
+      .sub_title {
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        color: #ffffff;
+        img {
+          width: 18px;
+          margin-right: 12px;
+        }
+      }
+    }
+    .bottom_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .sub_title {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        img {
+          width: 22px;
+          margin-right: 10px;
+        }
+      }
+      .seeMore {
+        font-weight: 400;
+        font-size: 14px;
+        color: #00a0ff;
+        line-height: 40px;
+        text-decoration-line: underline;
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .scrollView {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      overflow-y: scroll;
+      height: auto;
+      max-height: calc(100vh - 330px);
+      .imgItem {
+        position: relative;
+        width: 185px;
+        height: 132px;
+        border-radius: 6px;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+          object-fit: cover;
+        }
+      }
+      .active_img {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 185px;
+        height: 132px;
+        background: #212121;
+        border-radius: 5px;
+        border: 1px solid #005aff;
+        opacity: 0.6;
+        top: 0;
+        left: 0;
+        img {
+          width: 48px;
+          object-fit: fill;
+          border: 0 !important;
+        }
+      }
+    }
+    /* 滚动条样式 */
+    .scrollView::-webkit-scrollbar {
+      width: 4px; /* 设置滚动条宽度 */
+    }
+    /* 滚动条轨道 */
+    .scrollView::-webkit-scrollbar-track {
+      background-color: #1d1d1d; /* 滚动条轨道颜色 */
+    }
+    /* 滚动条滑块 */
+    .scrollView::-webkit-scrollbar-thumb {
+      background-color: #888; /* 滑块颜色 */
+      border-radius: 6px; /* 设置圆角 */
+    }
+  }
+}

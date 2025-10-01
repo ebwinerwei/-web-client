@@ -1,0 +1,274 @@
+.canvas-container {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.seg_use * {
+  cursor: url(/imgs/官网鼠标2.svg), auto !important;
+}
+
+.editor_wrap {
+  height: 100%;
+  width: 100%;
+  .react-transform-wrapper {
+    height:100%;
+    width:fit-content;
+    align-content:center;
+  }
+}
+
+.pngModal {
+  .ant-modal-content {
+    background-color: transparent;
+    .ant-modal-body {
+      padding: 0;
+      .pngContainer {
+        width: 920px;
+        height: 674px;
+        background: linear-gradient(180deg, #0d0e0f, #333333);
+        border-radius: 20px;
+        padding: 18px 26px;
+        .png_title {
+          display: flex;
+          align-items: center;
+          img {
+            width: 24px;
+            margin-right: 12px;
+            margin-top: 1px;
+          }
+          font-size: 22px;
+          color: #fff;
+        }
+        .sub_title {
+          margin-top: 12px;
+          font-size: 16px;
+          color: #fff;
+        }
+        .carousel-wrapper {
+          width: 100%;
+          position: relative;
+          margin-top: 28px;
+          .btnContainer {
+            display: flex !important;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+            column-gap: 20px;
+            .btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+              width: 90px;
+              height: 32px;
+              background: #252525;
+              border-radius: 5px;
+              transition: all 0.3s ease-in-out;
+              cursor: pointer;
+              white-space: nowrap; /* 确保文本在一行内显示 */
+              overflow: hidden; /* 隐藏超出容器的内容 */
+              text-overflow: ellipsis; /* 使用省略号表示被截断的文本 */
+              &:hover {
+                background: linear-gradient(90deg, #00a8ff, #005aff);
+              }
+            }
+            .active_btn {
+              background: linear-gradient(90deg, #00a8ff, #005aff);
+            }
+          }
+          .left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 36px;
+            position: absolute;
+            left: -10px;
+            top: 18px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.64);
+            background: #2a2a2a;
+            transition: all 0.2s ease-in-out;
+            z-index: 99;
+            span {
+              font-size: 18px !important;
+            }
+            &:hover {
+              color: #fff;
+              background-color: rgb(6, 149, 225);
+            }
+          }
+
+          .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 36px;
+            position: absolute;
+            right: -10px;
+            top: 18px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.64);
+            background: #2a2a2a;
+            transition: all 0.2s ease-in-out;
+            z-index: 99;
+            span {
+              font-size: 18px !important;
+            }
+
+            &:hover {
+              color: #fff;
+              background-color: rgb(6, 149, 225);
+            }
+          }
+        }
+        .img_scroll {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100%;
+          height: 300px;
+          gap: 20px;
+          overflow-y: scroll;
+          img {
+            width: 126px;
+            height: 126px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+              background: #212121;
+              border-radius: 5px;
+              border: 1px solid #005aff;
+            }
+          }
+          .active_img {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 126px;
+            height: 126px;
+            background: #212121;
+            border-radius: 5px;
+            border: 1px solid #005aff;
+            opacity: 0.6;
+            top: 0;
+            left: 0;
+            img {
+              width: 48px;
+              border: 0 !important;
+            }
+          }
+          /* 滚动条样式 */
+          &::-webkit-scrollbar {
+            width: 4px; /* 设置滚动条宽度 */
+          }
+          /* 滚动条轨道 */
+          &::-webkit-scrollbar-track {
+            background-color: #1d1d1d; /* 滚动条轨道颜色 */
+          }
+          /* 滚动条滑块 */
+          &::-webkit-scrollbar-thumb {
+            background-color: #888; /* 滑块颜色 */
+            border-radius: 6px; /* 设置圆角 */
+          }
+        }
+        .add_btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 412px;
+          height: 46px;
+          margin-top: 40px;
+          background: linear-gradient(90deg, #00a8ff, #005aff);
+          border-radius: 5px;
+          font-family: Microsoft YaHei;
+          font-weight: bold;
+          font-size: 18px;
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.img_editor_btn_container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 12px;
+  top: 14px;
+  right: 20px;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #171717;
+}
+
+.img_editor_btn_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  line-height: 15px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img_editor_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  // background: #333333;
+  border-radius: 3px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 36px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+      rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+      rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+}
+
+.slider {
+  position: absolute;
+  left: -110px;
+  width: 100px;
+  .ant-slider-track {
+    background-color: #005aff;
+  }
+}
+
+.active_img_editor_btn {
+  background: #333333;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.brush-shape {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #0062ffbb;
+  pointer-events: none;
+  z-index: 999;
+}

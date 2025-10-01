@@ -1,0 +1,232 @@
+.loginModal {
+  z-index: 1010;
+  :global {
+    .ant-modal-content {
+      border-radius: 8px;
+    }
+    .ant-modal-body {
+      padding: 0;
+    }
+  }
+}
+
+.loginContainer {
+  position: relative;
+  // height: 615px;
+  .loginMethods {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .loginArea {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    padding-bottom: 20px;
+    .line {
+      width: 75%;
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 20px;
+      .inputArea {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      .label {
+        width: 110px;
+        margin-right: 10px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.cancelIcon {
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  i {
+    font-size: 34px;
+  }
+}
+
+.leftContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 405px;
+  border-radius: 7px 0 0 7px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(/imgs/image_zcch.png) no-repeat;
+  .logo {
+    display: block;
+    width: 143px;
+    height: 51px;
+    margin-bottom: 34px;
+    margin-top: 58px;
+  }
+  .title {
+    width: 187px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(#ffffff, 0.7);
+    line-height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      white-space: nowrap;
+    }
+  }
+}
+
+.leftTitle {
+  font-size: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.leftLine {
+  position: relative;
+  left: 22px;
+  width: 195px;
+  margin-top: 34px;
+  color: #ffffff;
+  i {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.bottomText {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -30px;
+  margin-top: 90px;
+  .bottomInnerText {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .textLeftLine {
+    width: 65px;
+    height: 3px;
+    background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 0px 100px 100px 0px;
+    opacity: 0.5;
+  }
+  .textRightLine {
+    width: 65px;
+    height: 3px;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    border-radius: 100px 0px 0px 100px;
+    opacity: 0.5;
+  }
+}
+
+.rightContainer {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 8px 8px 0;
+  padding-top: 50px;
+  .rightTitle {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    img {
+      width: 120px;
+    }
+  }
+  .rightTitleText {
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: #333333;
+  }
+  .rightSubTitleText {
+    font-size: 17px;
+    font-weight: 400;
+    color: #999999;
+  }
+  .rightQrCode {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin-top: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .qrCodeMask {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 220px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.4);
+      cursor: pointer;
+      span {
+        margin-left: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+  .qrCodeSubTitle {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    i {
+      position: relative;
+      top: 2px;
+      color: #31ab21;
+      margin-right: 3px;
+    }
+  }
+  .goLoginLine {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #999999;
+    span {
+      color: #2990e0;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .bottomLine {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999999;
+    span {
+      color: #666666;
+      cursor: pointer;
+    }
+  }
+}
+
+.type1Container {
+  height: 560px;
+  border-radius: 8px;
+}

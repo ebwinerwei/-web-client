@@ -1,0 +1,186 @@
+@import '~antd/es/style/variable.less';
+@import '/public/iconfont/font_3541372_x2v890vdys/iconfont.css';
+
+@font-face {
+  font-family: 'youhei';
+  src: url('/优设标题黑.ttf');
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background: #171717;
+}
+
+.ant-layout-content {
+  background: #171717;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-content {
+  padding: 0px !important;
+  background: #171717 !important;
+}
+
+//.ant-layout {
+//  width:max-content !important;
+//}
+//.ant-pro-layout-container {
+//  width:max-content !important;
+//}
+
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  vertical-align: -0.15em;
+  fill: currentColor;
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 0px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #acacac;
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+*::-webkit-scrollbar-track {
+  background: #ededed;
+  border-radius: 10px;
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+// 右侧drawer
+.ant-pro-setting-drawer-handle {
+  display: none !important;
+}
+
+.setting_icon {
+  display: none !important;
+  position: fixed;
+  right: 0;
+  bottom: 100px;
+  z-index: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--ant-primary-color);
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+    box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  pointer-events: auto;
+}
+
+.setting_icon_show {
+  transform: translate(-300px, 0);
+}
+
+.popContainer {
+  width: 600px;
+  height: 300px;
+  overflow-y: scroll;
+  .subPrompt {
+    margin-top: 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 1550px) and (min-width: 1450px) {
+  .draw-right {
+    transform-origin: top left; /* 设置缩放的基点 */
+    transform: scaleX(0.9); /* 缩放比例为80% */
+  }
+}
+
+@media screen and (max-width: 1450px) and (min-width: 1390px) {
+  .draw-right {
+    transform-origin: top left; /* 设置缩放的基点 */
+    transform: scaleX(0.85); /* 缩放比例为80% */
+  }
+}
+
+@media screen and (max-width: 1390px) and (min-width: 1330px) {
+  .draw-right {
+    transform-origin: top left; /* 设置缩放的基点 */
+    transform: scaleX(0.8); /* 缩放比例为80% */
+  }
+}
+
+// @media screen and (max-width: 1330px) {
+//   body {
+//     transform-origin: top left; /* 设置缩放的基点 */
+//     transform: scale(0.85); /* 缩放比例为80% */
+//   }
+// }
